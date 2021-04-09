@@ -77,7 +77,7 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         color: rgba(0, 0, 0, 0.541);
 
         height: 1.5rem;
-        width: 88%;
+        width: 100%;
         border-color: var(--color-bg-light);
         border-radius: 1rem;
         padding: 1rem 1rem;
@@ -105,18 +105,30 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         inset -8px -8px 8px #f7f5f5c2;
     }
 
-    input[type="radio"] i {
+    input[type="radio"] {
         /* box-shadow: inset 8px 8px 8px #dfdcdcce,
         inset -8px -8px 8px #f7f5f5c2; */
         background: rgb(167, 27, 27);
     }
     i {
-        margin: 0.3rem;
+        /* margin: 0.3rem; */
+        margin-left: -2rem;
         color: black;
+        z-index: 1;
     }
 
-    #bc1  {
-        font-family: var(--font-family-primary);
+    label {
+        font-size: 0.82rem;
+    }
+
+    select {
+        border: 1px solid white;
+        box-shadow: 1px 1px 6px rgba(165, 165, 165, 0.925), -13px -13px 20px white;
+        padding: 0.5rem 1.2rem;
+        border-radius: 25rem;
+    }
+    option:hover {
+        background: brown;
     }
 
     button {
@@ -124,11 +136,12 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         border: 2px solid rgb(5, 212, 5);
         padding: 0.9rem 3rem;
         border-radius: 1.5rem;
-        box-shadow: 1px 1px 6px rgba(126, 241, 126, 0.925), -13px -13px 20px white;
+        box-shadow: 1px 1px 6px rgba(126, 241, 126, 0.925), -13px -13px 20px rgb(255, 255, 255);
         color: var(--color-bg-light);
         font-size: 1rem;
         font-weight: 500;
         letter-spacing: 1px;
+        margin-top: 2rem;
     }
 
     button:hover {
@@ -145,4 +158,8 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
             flex: 1 312px;
         }
         
+
+        input[type="tel"] {
+            width: 100%;
+        }
     }
