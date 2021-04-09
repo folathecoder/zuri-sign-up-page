@@ -1,13 +1,9 @@
 :root {
     
     /* ===== colors */
-
     --color-bg: #eeeeee;
     --color-bg-light: #ffffff;
-
-
     /* ==== typography */
-
     --font-family-primary: 'Montserrat', sans-serif;
 }
 * {
@@ -15,12 +11,10 @@
     padding: 0;
     box-sizing: border-box;
     }
-    
-    body {
-      /* background: rgb(128, 81, 88); */
-      background-color: hsl(210, 95%, 77%);
-background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 
+    body {
+      background-color: hsl(210, 95%, 77%);
+      background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
       min-height: 100vh;
       max-width: 100%;
       display: grid;
@@ -66,8 +60,6 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         flex: 1;
         margin: 0.2rem;
     }
-
-
     input[type="text"], input[type="email"] {
         border: none;
         outline: none;
@@ -76,26 +68,21 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         color: rgba(0, 0, 0, 0.945);
         font-family: var(--font-family-primary);
         font-size: 0.7rem;
-
         height: 1.5rem;
-        width: 100%;
+        width: 98%;
         border-color: var(--color-bg-light);
         border-radius: 1rem;
         padding: 1rem 1rem;
         margin-bottom: 1rem;
         box-shadow: inset 8px 8px 8px #dfdcdcce,
         inset -8px -8px 8px #f7f5f5c2;
-
-
     }
-
     input[type="tel"] {
         border: none;
         outline: none;
         background: none;
         font-weight: 500;
         color: rgba(0, 0, 0, 0.541);
-
         height: 1.5rem;
         width: 50%;
         border-color: var(--color-bg-light);
@@ -105,54 +92,34 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         box-shadow: inset 8px 8px 8px #dfdcdcce,
         inset -8px -8px 8px #f7f5f5c2;
     }
-
     input[type="radio"] {
-        /* box-shadow: inset 8px 8px 8px #dfdcdcce,
-        inset -8px -8px 8px #f7f5f5c2; */
         background: rgb(167, 27, 27);
     }
-
     .input_box span {
         font-family: var(--font-family-primary);
         margin-right: 1rem;
     }
-
     .input_box h4 {
         margin-bottom: 1rem;
     }
-
     i {
-        margin-left: -3rem;
+        margin-left: -2rem;
         color: black;
         z-index: 1;
     }
-
     .input_box i {
         margin-left: 0rem;
     }
-
     label {
         font-size: 0.82rem;
     }
-
     select {
-        border: 1px solid white;
-        padding: 0.5rem 1.2rem;
-        border-radius: 25rem;
+        border: 0;
+        padding: 0.5rem 1.3rem;
+        border-radius: 2rem;
         box-shadow: inset 8px 8px 8px #dfdcdcce,
         inset -8px -8px 8px #f7f5f5c2;
     }
-
-    .select:focus, .select:hover {
-        outline: none;
-        border: 1px solid red;
-
-    }
-
-    option:hover {
-        background: brown;
-    }
-
     button {
         background: rgb(5, 212, 5);
         border: 2px solid rgb(5, 212, 5);
@@ -165,23 +132,16 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         letter-spacing: 1px;
         margin-top: 2rem;
     }
-
     button:hover {
         transition: 0.5s;
         background: rgba(5, 212, 5, 0.603);
         border: 2px solid rgba(5, 212, 5, 0.603);
     }
-
-
-
-
     @media (max-width: 624px){
         .input-group > * {
             flex: 1 312px;
         }
-        
-
         input[type="tel"] {
-            width: 100%;
+            width: 98%;
         }
     }
