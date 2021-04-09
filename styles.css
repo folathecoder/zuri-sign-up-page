@@ -49,8 +49,7 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         font-weight: 500;
     }
 
-    .input-box {
-        /* background: red; */
+    .input-box  {
         margin-top: 1rem; 
         font-family: var(--font-family-primary);
     }
@@ -74,7 +73,9 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         outline: none;
         background: none;
         font-weight: 500;
-        color: rgba(0, 0, 0, 0.541);
+        color: rgba(0, 0, 0, 0.945);
+        font-family: var(--font-family-primary);
+        font-size: 0.7rem;
 
         height: 1.5rem;
         width: 100%;
@@ -110,11 +111,24 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         inset -8px -8px 8px #f7f5f5c2; */
         background: rgb(167, 27, 27);
     }
+
+    .input_box span {
+        font-family: var(--font-family-primary);
+        margin-right: 1rem;
+    }
+
+    .input_box h4 {
+        margin-bottom: 1rem;
+    }
+
     i {
-        /* margin: 0.3rem; */
         margin-left: -2rem;
         color: black;
         z-index: 1;
+    }
+
+    .input_box i {
+        margin-left: 0rem;
     }
 
     label {
@@ -123,10 +137,18 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 
     select {
         border: 1px solid white;
-        box-shadow: 1px 1px 6px rgba(165, 165, 165, 0.925), -13px -13px 20px white;
         padding: 0.5rem 1.2rem;
         border-radius: 25rem;
+        box-shadow: inset 8px 8px 8px #dfdcdcce,
+        inset -8px -8px 8px #f7f5f5c2;
     }
+
+    .select:focus, .select:hover {
+        outline: none;
+        border: 1px solid red;
+
+    }
+
     option:hover {
         background: brown;
     }
